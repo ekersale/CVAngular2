@@ -1,0 +1,25 @@
+<div  class="blur">
+  <div class="container">
+    <div class="row destacados" @flyInOut>
+      <div class="col-xs-offset-2 col-xs-8">
+        <div class="box1">
+          <img src="https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/14470367_665059476995816_3337780569295444766_n.jpg?oh=358d241bdb1e211cbd83a1f5f37f5034&oe=58F74E15" class="img-circle img-thumbnail">
+          <br /> <br />
+          <h3>Elliot KERSALÉ</h3>
+          <h4>{{ 'jobName' | translate }}</h4>
+          <div class="row">
+            <div class="row" style="margin:auto; text-align:left;">
+              <h5>{{ 'Who am I' | translate }} ?</h5>
+              <p style="color:white; padding-left: 20px;">{{'LifeDetails' | translate}}</p>
+              <h5>{{ "What am I looking for ?" | translate }} ?</h5>
+              <p style="color:white; padding-left: 20px;">{{ 'WhatIWantDetails' | translate }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a routerLink="/career" class="next-round-link">
+    <span class="fa fa-angle-double-down"></span>
+  </a>
+</div>

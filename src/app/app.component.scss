@@ -1,0 +1,297 @@
+@import "../style";
+
+html,body, .container-fluid, .sidebar2,.main-content{
+  height:100%;
+}
+
+@mixin calc($key, $value) {
+  #{$key}: -webkit-calc(#{$value});
+  #{$key}: -moz-calc(#{$value});
+  #{$key}: calc(#{$value});
+}
+
+.list {
+
+  a:-webkit-any-link {
+    cursor: default;
+    text-decoration: none;
+  }
+
+  a {
+
+    color:$linkColor;
+
+    &.active {
+      color: $orangeCV;
+    }
+  }
+}
+
+.sidebar2 {
+  background-color: $sideBarBackground;
+  padding: 0px !important;
+  box-shadow: 2px 2px 5px $sideBarShadow;
+  z-index: 1000;
+  height: 100%;
+  width: 16%;
+  position: fixed;
+  min-width: 55px;
+}
+
+.logo {
+  color:#afb1b5;
+  padding:0px 10px 0px 10px;
+  min-height: 85px;
+}
+
+h4 {
+  margin: 25px 0px 10px 0px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 0px 10px 0px 10px;
+}
+
+.logo>img {
+  margin-top: 30px;
+  padding: 1px;
+  border: 3px solid $orangeCV;
+  border-radius: 100%;
+  background-color: #fff;
+  max-height: 150px;
+}
+
+.btn.contact-me
+{
+  background-color:$orangeCV;
+  color:#eee;
+  width:inherit;
+  border-radius:0;
+  border:0px;
+
+  &:hover , &:active, &:focus {
+    background-color:$orangeCV;
+    border: 0.5px solid transparent;
+    color:white;
+    outline:none;
+    font-weight:600;
+  }
+
+}
+
+.coins
+{
+  display:block;
+  font-size:20px;
+  font-family:'"Helvetica Neue",Helvetica,Arial,sans-serif';
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 0px 10px 0px 10px;
+}
+.list {
+  color: #eee;
+  list-style: none;
+  padding-left: 0px;
+}
+
+a:nth-child(odd) li {
+  background-color:#13171d;
+}
+
+li>i {margin-right:15px;
+}
+
+
+.images-competences {
+  text-align:center;
+  img {
+    max-height:50px;
+    display: inline-block;
+    max-width:50px;
+  }
+}
+
+.translation{
+  text-align: right;
+  padding: 0px 10px 0px 0px;
+  margin: 5px 0px 0px 0px;
+  color: #909090;
+  cursor: default;
+
+
+  .spanLanguages {
+    &.active {
+      color:$orangeCV;
+    }
+
+    &:hover {
+      cursor: default;
+    }
+  }
+}
+
+.main-content {
+  float: right;
+  width: 84% !important;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+#aa_particles {
+  z-index: -1;
+  width:100%;
+  height: 100%;
+  height: 100vh;
+  background: #2a303a;
+  position: absolute;
+  top: 0;
+}
+
+@media screen and (max-width: 900px) {
+  .contact-me {
+    span {
+      position: absolute;
+      visibility: hidden;
+      width: 0;
+      height: 0;
+      margin: 0;
+    }
+  }
+
+  .list {
+    li {
+      padding: 15px 0px 15px 0px;
+      font-size: 16px;
+      font-weight: lighter;
+      text-align: center;
+
+      &:hover {
+        box-shadow:1px 1px 10px 1px $orangeCV inset;
+        transition: none;
+        padding-left: 0px;
+      }
+    }
+
+    i {
+      visibility: visible;
+      width: auto;
+      height: auto;
+      position:relative;
+      margin:auto;
+    }
+
+
+    span {
+      visibility: hidden;
+      width: 0 !important;
+      height: 0 !important;
+      position: absolute;
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+
+  .contact-me {
+    span {
+      position: relative;
+      visibility: visible;
+      width: auto;
+      height: auto;
+      margin: auto;
+    }
+  }
+
+  .list {
+    li{
+      padding: 15px 0px 15px 40px;
+      font-size: 16px;
+      font-weight:lighter;
+
+      &:hover {
+        box-shadow:1px 1px 10px 1px $orangeCV inset;
+        transition: padding-left 0.2s linear;
+        padding-left: 60px;
+      }
+    }
+
+    i {
+      visibility: hidden;
+      width: 0;
+      height: 0 !important;
+      position: absolute;
+    }
+
+    span {
+      visibility: visible;
+      width: auto;
+      position: relative;
+      height: auto;
+    }
+  }
+}
+
+.left-navigation {
+  ::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+  }
+}
+
+@media screen and (max-height: 830px) {
+  .images-competences {
+    visibility: hidden;
+    height:0px;
+  }
+}
+
+@media screen and (max-height: 630px) {
+  .images-competences {
+    visibility: hidden;
+    height:0px;
+  }
+
+  .left-navigation {
+    max-height: 230px;
+    overflow-y: scroll;
+    position: absolute;
+    width: 100%;
+    bottom: 32px;
+  }
+}
+
+@media screen and (max-height: 550px) {
+  .coins {
+    position: absolute;
+    visibility: hidden;
+    height: 0px;
+  }
+}
+
+@media screen and (max-height: 536px) {
+  h4 {
+    position: absolute;
+    visibility: hidden;
+    height: 0px;
+  }
+}
+
+@media screen and (max-height: 518px) {
+  .logo {
+    visibility: hidden;
+    height: 0;
+    position:absolute;
+  }
+
+  .left-navigation {
+    overflow-y: scroll;
+    position: absolute;
+    width: 100%;
+    bottom: 32px;
+    @include calc('max-height', '100% - 60px');
+  }
+}

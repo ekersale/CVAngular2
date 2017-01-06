@@ -1,0 +1,126 @@
+@import '../../style';
+
+
+.highlight  {
+  color: white;
+  background: rgba(0, 0, 0, 0.26);
+  border-radius: 10px;
+  padding: 3%;
+  margin-top: 22px;
+  max-height: 500px;
+  height: 500px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 1px;  /* remove scrollbar space */
+
+  background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #000000;
+}
+
+.container .row:nth-child(even) {
+  width: 100%;
+  .highlight {
+    float:right;
+  }
+}
+
+.no-float {
+  ul {
+    margin:auto;
+    width: 100%;
+  }
+
+  img {
+    max-height: 74px;
+  }
+}
+
+.job-details {
+  margin-top: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.highlight img {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: auto;
+}
+
+.highlight ul {
+  list-style-image: url('http://icons.iconarchive.com/icons/yusuke-kamiyamane/fugue/16/tick-small-icon.png');
+  margin-left: 1%;
+  float: left;
+  clear: right
+}
+
+.highlight button {
+  margin-left: 1%;
+  float: right;
+}
+
+.highlight h1,h2,h3,h4,h5,h6 {
+  padding-bottom: 2%;
+  border-bottom: 2px dashed rgba(255, 255, 255, 0.41);
+  font-size:20px;
+  text-align : center;
+  text-transform: uppercase;
+}
+
+.highlight p {
+  text-align: justify;
+}
+
+@media screen and (min-width: 991px) {
+
+  .less-float {
+    height: 100%;
+    display: table-row;
+  }
+
+  .less-float {
+    .no-float {
+      display: table-cell;
+      float: none;
+    }
+
+    .img {
+      margin: auto;
+      text-align: center;
+      padding: 0;
+      vertical-align: middle;
+    }
+
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .left {
+    margin-left: 7.33%;
+    margin-right: 1%;
+  }
+
+  .right {
+    margin-right: 7.33%;
+    margin-left: 1%;
+  }
+}
+
+@media screen and (max-width: 766px) {
+  .highlight {
+    max-height: 1000px;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .highlight {
+    height: 440px;
+  }
+}

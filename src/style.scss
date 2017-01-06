@@ -1,0 +1,45 @@
+$orangeCV : #F17153;
+$orangeCV-hover : #F1573F;
+$sideBarBackground : #1a1f27;
+$sideBarShadow : #262a35;
+$linkColor : white;
+
+.next-round-link {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  margin-left: -25px;
+  margin-bottom: 30px !important;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border: 1px solid $orangeCV;
+  border-radius: 50%;
+  line-height: 48px;
+  text-align: center;
+  font-size: 32px;
+  color: $orangeCV;
+}
+
+.container {
+  max-height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.blur {
+  background: transparent;
+  width: 84%;
+  height: 100%;
+  position:fixed;
+}
+
+::-webkit-scrollbar {
+  width: 1px;  /* remove scrollbar space */
+
+  background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #000000;
+}

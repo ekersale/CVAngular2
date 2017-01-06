@@ -1,0 +1,44 @@
+<div id="aa_particles"></div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="sidebar2">
+      <div class="translation">
+        <span class="languageGroup" *ngFor="let lang of supportedLanguages">
+          <span (click)="selectLang(lang.value)" class="spanLanguages" [class.active]="isCurrentLang(lang.value)" >
+            {{ lang.display }}
+          </span>
+        <span *ngIf="(supportedLanguages[supportedLanguages.length - 1] != lang)" >|</span>
+        </span>
+      </div>
+      <div class="logo text-center">
+        <img src="https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/14470367_665059476995816_3337780569295444766_n.jpg?oh=358d241bdb1e211cbd83a1f5f37f5034&oe=58F74E15" class="img-responsive center-block" alt="Logo">
+        <h4>Elliot KERSALÉ</h4>
+        <p class="coins">{{ 'jobName' | translate }}</p>
+      </div>
+      <div class="images-competences">
+        <img src="./assets/images/logos/html5.svg" alt="HTML5" />
+        <img src="./assets/images/logos/angular.svg" alt="angular2" />
+        <img src="./assets/images/logos/nodejs.svg" alt="nodejs" />
+        <img src="./assets/images/logos/csharp.svg" alt="C#" />
+      </div>
+      <br>
+      <div class="left-navigation">
+
+        <ul class="list">
+          <a routerLink="/me" routerLinkActive="active"><li><i class="fa fa-question"></i><span>{{ 'Who am I'     | translate }}</span></li></a>
+          <a routerLink="/career" routerLinkActive="active"><li><i class="fa fa-suitcase"></i><span>{{ 'Career'       | translate }}</span></li></a>
+          <a routerLink="/skills" routerLinkActive="active"><li><i class="fa fa-lightbulb-o"></i><span>{{ 'Skills'       | translate }}</span></li></a>
+          <a routerLink="/education" routerLinkActive="active"><li><i class="fa fa-graduation-cap"></i><span>{{ 'Education'    | translate }}</span></li></a>
+          <a><li><i class="fa fa-trophy"></i><span>{{ 'Achievements' | translate }}</span></li></a>
+        </ul>
+      </div>
+
+      <div style="position: absolute; bottom:0; left:0; width:100%;">
+          <a class="btn btn-default contact-me" routerLink="/contact" routerLinkActive="active"><i class="fa fa-envelope-o" aria-hidden="true"></i><span style="padding-left: 12px;">{{ 'Contact me' | translate | uppercase }}</span></a>
+      </div>
+    </div>
+    <div class="main-content">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+<div id="cont" [attr.data-pct]="level" >
+  <svg id="svg" width="200" height="200" viewPort="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <clipPath id="cut-off-bottom">
+        <rect x="0" y="0" width="200" height="100" />
+      </clipPath>
+    </defs>
+    <circle clip-path="url(#cut-off-bottom)" r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48" stroke-dashoffset="0"></circle>
+    <circle #bar [style.stroke]="barColor" clip-path="url(#cut-off-bottom)" id="bar" r="90"  cx="100" cy="100" fill="transparent" stroke-dasharray="565.48" stroke-dashoffset="0" [style.strokeDashoffset]="_barvalue"></circle>
+  </svg>
+  <h2>{{skill}}</h2>
+</div>
