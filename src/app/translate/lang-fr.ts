@@ -28,11 +28,24 @@ export const LANG_FR_TRANS = {
   'Sogeti Job Details': "Développer un réseau social interne à Sogeti High Tech pour les collaborateurs afin de permettre à la direction \
                         de communiquer sur des évènements. La solution intègre également un mode 'Safety Check' permettant de déployer des alertes \
                         et de recenser les personnes hors de danger. L'application est déployée sur Android, iOS et Windows Phone.",
-  'BeaVR Job Details': "BeaVR est une plateforme d'apprentissage utilisant la réalité virtuelle afin de proposer une approche pédagogique innovante. Au travers du Store et du Creator, nous permettons à chaque utilisateur de se positionner en tant qu'acteur ou créateur de contenu sans restriction autre que de posséder le matériel de réalité virtuelle.",
+  'BeaVR Job Details' : "BeaVR est une plateforme d'apprentissage utilisant la réalité virtuelle afin de proposer une approche pédagogique innovante. Au travers du Store et du Creator, nous permettons à chaque utilisateur de se positionner en tant qu'acteur ou créateur de contenu sans restriction autre que de posséder le matériel de réalité virtuelle.",
   'Thales Job Details': "Développer un simulateur de maintenance sur des radios militaires, destiné à la formation pour en réduire les couts. Utilisation de la réalité virtuelle et du périphérique Leap Motion afin de rendre la simulation plus interractive. Projet présenté au Forum de la Défense (FED) de paris en Mai 2015.",
   'etesting Job Details': "Développer un système de monitoring pour connaître l’état de serveur impliquant un système d’alerte par mail.",
   'This is a required field.': "Veuillez renseigner ce champs.",
-  'Get in touch!': 'Contactez-moi!',
-  'Email address': 'Adresse email',
-  'Subject' : 'Sujet'
+  'Get in touch!'     : 'Contactez-moi!',
+  'Email address'     : 'Adresse email',
+  'Subject'           : 'Sujet',
+  'Web development'   : 'Développement web',
+  'years'             :  'ans',
+  'Expert'            : 'Expert',
+  'Proficient'        : 'Professionnel',
+  'Competent'         : 'Intermédiaire',
+  'Standalone app'    : 'App standalone',
+  'System admin'      : 'Admin système',
+  'Curiosity'         : 'Curiosité',
+  'Team work'         : 'Travail en équipe',
+  'Agile methods'     : 'Méthodes Agile',
+  'Languages'         : 'Langues',
+  'French'            : 'Français',
+  'English'           : 'Anglais'
 };

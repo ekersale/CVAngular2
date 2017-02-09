@@ -9,6 +9,7 @@ import { CareerComponent } from './career/career.component';
 import {EducationComponent} from "./education/education.component";
 import {SkillsComponent} from "./skills/skills.component";
 import {ContactComponent} from "./contact/contact.component";
+import { AchievementsComponent } from './achievements/achievements.component';
 
 export const routes: Routes = [
   {
@@ -31,6 +32,10 @@ export const routes: Routes = [
   {
     path: 'education',
     component: EducationComponent
+  },
+  {
+    path: 'achievements',
+    component: AchievementsComponent
   },
   {
     path: 'contact',

@@ -31,7 +31,17 @@ export const LANG_EN_TRANS = {
   'Thales Job Details': "",
   'etesting Job Details': "",
   'This is a required field.': 'This is a required field.',
-  'Get in touch!': 'Get in touch!',
-  'Email address':'Email address',
-  'Subject':'Subject'
+  'Get in touch!'     : 'Get in touch!',
+  'Email address'     :'Email address',
+  'Subject'           :'Subject',
+  'Web development'   : 'Web development',
+  'years'             :  'years',
+  'Standalone app'    : 'Standalone app',
+  'System admin'      : 'System admin',
+  'Curiosity'         : 'Curiosity',
+  'Team work'         : 'Team work',
+  'Agile methods'     : 'Agile methods',
+  'Languages'         : 'Languages',
+  'French'            : 'French',
+  'English'           : 'English'
 };

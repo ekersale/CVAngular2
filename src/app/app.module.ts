@@ -19,6 +19,7 @@ import { ContactComponent } from './contact/contact.component';
 import { Angular2FontawesomeModule } from 'angular2-fontawesome/angular2-fontawesome';
 import { CircularBarComponent } from './circular-bar/circular-bar.component';
 import { RecaptchaNoFormsModule } from 'ng2-recaptcha/ng2-recaptcha.noforms';
+import { AchievementsComponent } from './achievements/achievements.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { RecaptchaNoFormsModule } from 'ng2-recaptcha/ng2-recaptcha.noforms';
     EducationComponent,
     SkillsComponent,
     ContactComponent,
-    CircularBarComponent
+    CircularBarComponent,
+    AchievementsComponent
   ],
   imports: [
     BrowserModule,
