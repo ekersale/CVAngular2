@@ -47,5 +47,15 @@ export const LANG_FR_TRANS = {
   'Agile methods'     : 'Méthodes Agile',
   'Languages'         : 'Langues',
   'French'            : 'Français',
-  'English'           : 'Anglais'
+  'English'           : 'Anglais',
+  'Creator explanation'     : 'Le « Creator » est un des projets de la plateforme BeaVR. L’outil a pour objectif de permettre à n’importe quel utilisateur de créer des scènes 3D dans son navigateur. Il a également pour but de démontrer la faisabilité de supporter le rendu 3D dans un navigateur web car nous sommes persuadés que c’est une étape nécessaire pour la démocratisation de la réalité virtuelle.\n\nDéveloppé de Mai 2016 à Janvier 2017. ',
+  'Store explanation'       : 'Le « Store » est un des projets de l’écosystème BeaVR. Comme son nom l’indique il s’agit d’un marché et plus globalement d’une plateforme permettant de déposer, échanger et vendre les applications créées depuis le « Creator ».\n\nDéveloppé de Mai 2016 à Janvier 2017. ',
+  'Vitrine explanation'     : 'Ce projet est le site vitrine et portail de BeaVR. Il a pour but de rediriger vers les différentes plateformes de l’écosystème. Il permet également à l’équipe de BeaVR de communiquer autour de leur  progression.\n\nDéveloppé en Octobre 2016.',
+  'CV explanation'          : '',
+  'SafetyCheck explanation' : '',
+  'GithubAPI explanation'   : '',
+  'UMovie explanation'      : '',
+  'MyIRC explanation'       : '',
+  'Nibbler explanation'     : ''
+
 };

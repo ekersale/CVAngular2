@@ -14,8 +14,7 @@ import { AchievementsComponent } from './achievements/achievements.component';
 export const routes: Routes = [
   {
     path: '',
-    redirectTo:'me',
-    pathMatch: 'full'
+    component:HomeComponent,
   },
   {
     path: 'me',
@@ -40,7 +39,13 @@ export const routes: Routes = [
   {
     path: 'contact',
     component: ContactComponent
+  },
+  {
+    path: '**',
+    component: HomeComponent
   }
 ];
 
-export const routing: ModuleWithProviders = RouterModule.forRoot(routes);
+export const routing: ModuleWithProviders = RouterModule.forRoot(routes, {
+  useHash: true
+});

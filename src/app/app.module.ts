@@ -6,7 +6,9 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { MaterialModule } from '@angular/material';
-import { Ng2BootstrapModule } from 'ng2-bootstrap/ng2-bootstrap';
+
+
+import { Ng2BootstrapModule  } from '../../node_modules/ng2-bootstrap/'
 
 import {routing} from './app.routes';
 
@@ -34,12 +36,12 @@ import { AchievementsComponent } from './achievements/achievements.component';
     AchievementsComponent
   ],
   imports: [
+    routing,
     BrowserModule,
     FormsModule,
     HttpModule,
+    Ng2BootstrapModule.forRoot(),
     MaterialModule.forRoot(),
-    Ng2BootstrapModule,
-    routing,
     Angular2FontawesomeModule,
     ReactiveFormsModule,
     RecaptchaNoFormsModule.forRoot()

@@ -43,5 +43,14 @@ export const LANG_EN_TRANS = {
   'Agile methods'     : 'Agile methods',
   'Languages'         : 'Languages',
   'French'            : 'French',
-  'English'           : 'English'
+  'English'           : 'English',
+  'Creator explanation'     : 'The « Creator » project is part of BeaVR ecosystem. This tool wants to allow people without development skills to create 3D scenes in their browser. More over it’s our way to demonstrate that it’s possible to make 3D applications in the web browser, indeed we believe that it’s a necessary step toward the democratization of virtual reality.\n\nDeveloped from May-2016 to January-2017.',
+  'Store explanation'       : 'The « Store » project is part of BeaVR ecosystem. This tool is the market place of our ecosystem. It allows users to put, exchange and sell their applications created from the   « Creator ».\n\nDeveloped from May-2016 to January-2017.',
+  'Vitrine explanation'     : 'This project is BeaVR ecosystem portal aiming to redirect to the « Store » and « Creator ». It also allows BeaVR team to communicate about their progression.\n\nDeveloped in October-2016.',
+  'CV explanation'          : '',
+  'SafetyCheck explanation' : '',
+  'GithubAPI explanation'   : '',
+  'UMovie explanation'      : '',
+  'MyIRC explanation'       : '',
+  'Nibbler explanation'     : ''
 };
